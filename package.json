@@ -1,0 +1,26 @@
+{
+  "name": "node-event-sourcing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register specs/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "jade": "^1.11.0",
+    "koa": "^1.1.2",
+    "koa-mongoose": "^1.0.9",
+    "koa-scss": "^0.2.0",
+    "mongoose": "^4.4.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.6.0",
+    "bower": "^1.7.7",
+    "chai": "^3.5.0"
+  }
+}
