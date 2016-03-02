@@ -33,7 +33,7 @@ describe('Aggregate Root', () => {
 
     aggregateRoot.hydrate(events);
 
-    expect(aggregateRoot.events.length).to.equal(2);
+    expect(aggregateRoot.events).to.have.lengthOf(2);
   });
 
   it('should set payload of events', () => {
@@ -45,5 +45,13 @@ describe('Aggregate Root', () => {
     aggregateRoot.hydrate([e]);
 
     expect(aggregateRoot.events[0]).to.equal(payload);
+  });
+
+  it('should not apply events without a handler', () => {
+    let aggregateRoot = new TestingEntity();
+
+    aggregateRoot.hydrate([{ name: 'unsubscribed_event', payload: {} }]);
+
+    expect(aggregateRoot.events).to.be.empty;
   });
 });

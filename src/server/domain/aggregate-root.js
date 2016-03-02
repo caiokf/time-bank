@@ -5,7 +5,7 @@ class AggregateRoot {
 
   hydrate(events) {
     events.forEach(x => {
-      this.applyEvent[x.name](x.payload);
+      this.applyEvent[x.name] && this.applyEvent[x.name](x.payload);
     });
   }
 }
