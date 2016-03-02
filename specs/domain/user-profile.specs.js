@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 
-import Events from '../../src/server/domain/domain-events';
-import UserProfile from '../../src/server/domain/user-profile';
+import Events from '../../src/domain/domain-events';
+import UserProfile from '../../src/domain/user-profile';
 
 describe('User Profile', () => {
   it('should handle user created event', () => {

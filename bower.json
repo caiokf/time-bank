@@ -1,0 +1,20 @@
+{
+  "name": "node-event-sourcing",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Caio Kinzel Filho <caiokf@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

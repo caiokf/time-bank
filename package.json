@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.6.1",
     "body-parser": "^1.15.0",
     "jade": "^1.11.0",
     "koa": "^1.1.2",
+    "koa-jade": "^2.1.0",
     "koa-mongoose": "^1.0.9",
     "koa-scss": "^0.2.0",
     "mongoose": "^4.4.5"

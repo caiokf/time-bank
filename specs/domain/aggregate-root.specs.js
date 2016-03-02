@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import AggregateRoot from '../../src/server/domain/aggregate-root';
+import AggregateRoot from '../../src/domain/aggregate-root';
 
 describe('Aggregate Root', () => {
   const Events = {
